@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda Sara | Inicio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fffaf7;
+      color: #333;
+    }
+
+    .marca {
+      color: #a64d79;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #f3dce8, #f9eadf);
+      border-radius: 24px;
+      padding: 70px 35px;
+    }
+
+    .btn-sara {
+      background-color: #a64d79;
+      color: white;
+    }
+
+    .btn-sara:hover {
+      background-color: #873b61;
+      color: white;
+    }
+
+    .categoria {
+      background-color: white;
+      border: 1px solid #f0e2e8;
+      border-radius: 16px;
+      padding: 24px 12px;
+      text-align: center;
+    }
+
+    .producto {
+      border: 0;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .producto-imagen {
+      min-height: 180px;
+      background: linear-gradient(135deg, #f1d8e3, #f8e9df);
+      display: grid;
+      place-items: center;
+      color: #75425b;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #3d3038;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand marca" href="index.html">TIENDA SARA</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+        aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+        </ul>
+
+        <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Buscar">
+          <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section class="hero mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <p class="text-uppercase fw-semibold mb-2">Bienvenida a nuestra tienda</p>
+          <h1 class="display-5 fw-bold">Encuentra algo especial en Tienda Sara</h1>
+          <p class="lead mt-3">
+            Explora nuestros productos y descubre tus nuevos favoritos.
+          </p>
+          <a class="btn btn-sara btn-lg mt-2" href="galeria.html">Explorar productos</a>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <div class="bg-white rounded-4 p-5 shadow-sm">
+            <span class="display-1" aria-hidden="true">♡</span>
+            <p class="mb-0 fw-semibold">Un espacio para encontrar lo que buscas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <div>
+          <p class="marca mb-1">DESCUBRE</p>
+          <h2 class="fw-bold mb-0">Categorías</h2>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-3"><div class="categoria">Categoría 1</div></div>
+        <div class="col-6 col-md-3"><div class="categoria">Categoría 2</div></div>
+        <div class="col-6 col-md-3"><div class="categoria">Categoría 3</div></div>
+        <div class="col-6 col-md-3"><div class="categoria">Ver todas</div></div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="mb-3">
+        <p class="marca mb-1">SELECCIÓN DE LA TIENDA</p>
+        <h2 class="fw-bold">Productos destacados</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card producto shadow-sm h-100">
+            <div class="producto-imagen">Imagen del producto</div>
+            <div class="card-body">
+              <h3 class="h5 card-title">Producto destacado 1</h3>
+              <p class="card-text text-secondary">Descripción breve del producto.</p>
+              <a href="galeria.html" class="btn btn-sara">Ver productos</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card producto shadow-sm h-100">
+            <div class="producto-imagen">Imagen del producto</div>
+            <div class="card-body">
+              <h3 class="h5 card-title">Producto destacado 2</h3>
+              <p class="card-text text-secondary">Descripción breve del producto.</p>
+              <a href="galeria.html" class="btn btn-sara">Ver productos</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card producto shadow-sm h-100">
+            <div class="producto-imagen">Imagen del producto</div>
+            <div class="card-body">
+              <h3 class="h5 card-title">Producto destacado 3</h3>
+              <p class="card-text text-secondary">Descripción breve del producto.</p>
+              <a href="galeria.html" class="btn btn-sara">Ver productos</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rounded-4 p-4 p-md-5 mb-5">
+      <h2 class="h3 fw-bold">Sobre Tienda Sara</h2>
+      <p class="mb-0">
+        En esta sección puedes presentar brevemente la tienda, lo que ofrece
+        y cómo contactar con ella.
+      </p>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>© 2026 Tienda Sara</span>
+      <span>Contacto: agrega aquí el correo o teléfono de la tienda</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
